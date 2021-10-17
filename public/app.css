@@ -1,0 +1,94 @@
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  gap: 25px;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+li{
+  margin-bottom: 30px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  transform: scale(0.8)
+}
+
+li:hover {
+  box-shadow: 10px 10px 7px grey;
+}
+
+.eachname{
+  padding-bottom: -40px;
+  padding-top: 15px;
+  transform: scale(1.2)
+}
+
+.pokemonimgs{
+  transform: scale(0.7);
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: -50px;
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 10px;
+}
+
+.buttons{
+  font-family: 'Press Start 2P', cursive;
+}
+
+nav{
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.Editheader{
+  font-family: 'Press Start 2P', cursive;
+}
+
+form{
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  background-color: #CC0000
+}
+
+#delbutton{
+ background-color: #ffcb05
+}
+
+@media screen and (max-width: 940px) {
+
+  ul {
+    list-style-type: none;
+    gap: 5px;
+  }
+
+
+}

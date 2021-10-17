@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="Editheader">
+      <h1>My Pokemon Selection Stats</h1>
+      <a href="/pokedex">Back to Index</a>
+
+      <h2><%=pokeChoice.name%></h2>
+      <img src="<%=pokeChoice.img%>">
+      <h3>Types</h3>
+      <% for (let i = 0; i < pokeChoice.type.length; i++) { %>
+          <li> <%=pokeChoice.type[i]%> </li>
+      <% } %>
+      <h3>Stats</h3>
+      <p>HP: <%=pokeChoice.stats.hp%></p>
+      <p>ATTACK: <%=pokeChoice.stats.attack%></p>
+      <p>DEFENSE: <%=pokeChoice.stats.defense%></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+        <img src="https://fontmeme.com/permalink/211014/d28472afb9a391904f9eab67724b5431.png" alt="pokemon-font" border="0">
+        </div>
+        <ul>
+          <div class="container">
+            <% for (let i = 0; i < allPokemon.length; i++) { %>
+                <li>
+                    <div class="name">
+                      <a class="eachname" href="/pokedex/<%=i%>"><%=allPokemon[i].name%></a>
+                    </div>
+                    <img class="pokemonimgs" src="<%=allPokemon[i].img%>">
+                    <div class="text">
+                      <form action="/pokedex/<%=i%>?_method=DELETE" method="POST">
+                        <input type="submit" class="buttons" id="delbutton" value="DELETE"/>
+                      </form>
+
+                      <a href="pokedex/<%=i%>/edit"><button class="buttons">EDIT</button></a>
+                    </div>
+                </li>
+            <% } %>
+            </div>
+        </ul>
+        <nav>
+            <a class="newlink" href="/pokedex/new">Create a New Pokemon</a>
+        </nav>
+        <!-- <style>
+          body {background-color: white}
+          img {transform: scale(0.5);
+        </style> -->
+    </body>
+</html>

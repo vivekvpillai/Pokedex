@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="Editheader"> Edit Pokemon Page</h1>
+    <% JSON.stringify(pokeChoice) %>
+    <form action="/pokedex/<%=index%>?_method=PUT" method="POST">
+
+      Name: <input type="text" name="name" value="<%=pokeChoice.name%>" /><br/>
+      Image: <input type="text" name="img" value="<%=pokeChoice.img%>" /><br/>
+      HP: <input type="number" name="hp" value="<%=pokeChoice.stats.hp%>" /> <br/>
+      Attack: <input type="number" name="attack" value="<%=pokeChoice.stats.attack%>" /> <br/>
+      Defense: <input type="number" name="defense" value="<%=pokeChoice.stats.defense%>" /> <br/>
+
+      <input type="submit" name="" value="Submit Changes" />
+    </form>
+  </body>
+</html>
