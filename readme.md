@@ -1,0 +1,1 @@
+This functioning Pokedex was created with the use of node packages such as express, embedded javascript(ejs), method-override, and RESTful routes with JSON views. I organized my code with core MVC principles. 
